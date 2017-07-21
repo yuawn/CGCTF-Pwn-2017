@@ -7,6 +7,7 @@ from pwn import *
 host = "pwn.yuawn.idv.tw"
 port = 10101
 host = '192.168.31.140'
+host = '172.16.115.109'
 
 
 yuan = remote(host,port)

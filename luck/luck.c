@@ -15,7 +15,7 @@ int main(){
     srand(seed); // random with time seed
 
     password = random(); // random password
-    read( 0 , &input , 10 ); // input your password
+    read( 0 , &input , 0x10 ); // input your password
 
     if( input == password ) {
         puts( "WOW, Pwn with luck? If not, you are such a good hacker :)" );
