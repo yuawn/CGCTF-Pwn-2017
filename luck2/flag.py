@@ -3,6 +3,7 @@ from pwn import *
 
 
 host , port = '172.16.115.109' , 10102
+host , port = 'ctf.yuawn.idv.tw' , 10102
 #host , port = '192.168.78.251' , 4000
 y = remote( host , port )
 

