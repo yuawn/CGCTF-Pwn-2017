@@ -1,0 +1,9 @@
+ysb:
+    build: ./
+    volumes:
+        - ./yuawn:/home/ysb:ro
+        - ./xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "11111:4597"
+    expose:
+        - "4597"
