@@ -9,7 +9,7 @@ int main(){
     fflush(stdout);
 
     int magic = 0 , input = 0;
-    
+
     magic = 0x12345678;
 
     read( 0 , &input , 0x10 ); // input your password
@@ -17,7 +17,7 @@ int main(){
     if( input == 0xfaceb00c &&  magic == 0xdeadbeef) {
 
         puts( "WOW, Pwn with luck? If not, you are such a good hacker :)" );
-        FILE *fd = fopen( "/home/luck/flag.txt" , "r" ); // open flag.txt file
+        FILE *fd = fopen( "/home/luck2/flag.txt" , "r" ); // open flag.txt file
         char flag[48];
         fread( flag , 1 , 48 , fd ); // read the content of flag.txt file into flag[48] buffer
         printf("Here is your flag: %s\n" , flag);
