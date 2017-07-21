@@ -5,13 +5,10 @@
 
 
 int main(){
-    FILE *fd = fopen( "/home/luck/flag.txt" , "r" ); // open flag.txt file
-    char flag[48];
-    fread( flag , 1 , 48 , fd ); // read the content of flag.txt file into flag[48] buffer
     puts( "Welcome to CGCTF 2017 :D" );
     fflush(stdout);
 
-    int password , input;
+    int password = 0 , input = 0;
 
     unsigned seed;
     seed = (unsigned)time(NULL);
@@ -22,6 +19,9 @@ int main(){
 
     if( input == password ) {
         puts( "WOW, Pwn with luck? If not, you are such a good hacker :)" );
+        FILE *fd = fopen( "/home/luck/flag.txt" , "r" ); // open flag.txt file
+        char flag[48];
+        fread( flag , 1 , 48 , fd ); // read the content of flag.txt file into flag[48] buffer
         printf("Here is your flag: %s\n" , flag);
     }
     else{
