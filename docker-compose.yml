@@ -18,13 +18,23 @@ luck:
     expose:
         - "4597"
 
+luck2:
+    build: ./luck2
+    volumes:
+        - ./luck2/home:/home/luck2:ro
+        - ./luck2/xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10102:4597"
+    expose:
+        - "4597"
+
 ysb:
     build: ./sb
     volumes:
         - ./sb/yuawn:/home/ysb:ro
         - ./sb/xinetd:/etc/xinetd.d/xinetd:ro
     ports:
-        - "10102:4597"
+        - "10103:4597"
     expose:
         - "4597"
 
@@ -34,6 +44,6 @@ simpleecho:
         - ./simpleecho/maps:/home/simpleecho:ro
         - ./simpleecho/xinetd:/etc/xinetd.d/xinetd:ro
     ports:
-        - "10103:4597"
+        - "10104:4597"
     expose:
         - "4597"

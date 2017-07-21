@@ -1,0 +1,1 @@
+CGCTF{Pwn_with_luck!}
