@@ -3,8 +3,9 @@
 #include<unistd.h>
 
 void you_cant_see_me(){
+    int magic = 1;
     system("echo Oh no~~~~~~~");
-    return;
+    if( magic ) return;
     system("sh");
 }
 
