@@ -11,7 +11,7 @@ int main(){
 
     read( 0 , &a , 4 ); //read 4 byte to int a
 
-    if( a == 878787) puts("XXXXXXXXXXXXXXXXXXXXXXXX"); // The flag.
+    if( a == 878787 ) puts("XXXXXXXXXXXXXXXXXXXXXXXX"); // The flag.
 
     return 0;
 }
