@@ -38,6 +38,16 @@ luck2:
     expose:
         - "4597"
 
+int_string:
+    build: ./int_string
+    volumes:
+        - ./int_string/home:/home/int_string:ro
+        - ./int_string/xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10107:4597"
+    expose:
+        - "4597"
+
 ysb:
     build: ./sb
     volumes:

