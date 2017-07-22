@@ -57,3 +57,13 @@ simpleecho:
         - "10104:4597"
     expose:
         - "4597"
+
+kidding:
+    build: ./kidding
+    volumes:
+        - ./kidding/home:/home/kidding:ro
+        - ./kidding/xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10106:4597"
+    expose:
+        - "4597"
