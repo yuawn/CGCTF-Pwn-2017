@@ -1,4 +1,4 @@
 #!/bin/bash
 #
 exec 2>/dev/null
-timeout 90 /home/bof/bof
+timeout 90 /home/kidding/kidding
