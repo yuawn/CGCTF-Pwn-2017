@@ -3,16 +3,16 @@
 #include<unistd.h>
 #include <fcntl.h>
 
-char name[70];
+char code[70];
 
 int main(){
 
-    int (*yuawn)() = (int(*)())name;
+    int (*yuawn)() = (int(*)())code;
 
     puts("Give me your shellcode:");
     fflush(stdout);
     
-    scanf("%s" , name);
+    read( 0 , name , 70 );
 
     yuawn();
 
