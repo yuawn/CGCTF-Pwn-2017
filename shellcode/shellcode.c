@@ -10,6 +10,8 @@ int main(){
     int (*yuawn)() = (int(*)())name;
 
     puts("Give me your shellcode:");
+    fflush(stdout);
+    
     scanf("%s" , name);
 
     yuawn();
