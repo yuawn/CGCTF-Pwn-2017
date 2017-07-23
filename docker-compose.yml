@@ -58,6 +58,16 @@ shellcode:
     expose:
         - "4597"
 
+bof3:
+    build: ./bof3
+    volumes:
+        - ./bof3/home:/home/bof3:ro
+        - ./bof3/xinetd:/etc/xinetd.d/xinetd:ro
+    ports:
+        - "10109:4597"
+    expose:
+        - "4597"
+
 ysb:
     build: ./sb
     volumes:
