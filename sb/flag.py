@@ -7,6 +7,7 @@ from pwn import *
 host = 'chall.pwnable.tw'
 port = 10103
 host = '60.251.236.17'
+#host = '172.16.115.109'
 port = 10103
 #host = '192.168.31.140'
 #port = 10100

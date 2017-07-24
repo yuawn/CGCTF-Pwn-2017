@@ -5,6 +5,7 @@ from pwn import *
 #host , port = '172.16.115.109' , 10100
 #host , port = '192.168.78.252' , 4000
 host , port = 'ctf.yuawn.idv.tw' , 10105
+host , port = '172.16.115.109' , 10105
 y = remote( host , port )
 
 p = 'a' * 24

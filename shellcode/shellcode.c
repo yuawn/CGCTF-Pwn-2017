@@ -12,7 +12,7 @@ int main(){
     puts("Give me your shellcode:");
     fflush(stdout);
     
-    read( 0 , name , 70 );
+    read( 0 , code , 70 );
 
     yuawn();
 

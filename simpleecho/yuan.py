@@ -6,6 +6,7 @@ from pwn import *
 
 host = "pwn.yuawn.idv.tw"
 port = 10104
+host , port = '172.16.115.109' , 10104
 #host = '192.168.31.140'
 #host = '172.16.115.109'
 
